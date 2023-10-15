@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 88px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+        input{
+            width: 260px;
+            height: 30px;
+            background-color:white;
+            color:black;
+        }
+        #ac{
+            background-color: aqua;
+        }
+        
+        #v{
+            background-color: silver;
+        }
+        #w{
+            background-color: silver;
+        }
+        #x{
+            background-color: silver;
+        }
+        #y{
+            background-color: silver;
+        }
+
+    </style> 
+    </head>
+    <body>
+     <table border="5px" rules="all"> 
+        <tr>
+            <td colspan="3"><input id="screen"></td>
+            <td><button id="ac" onclick="ac()">AC</button></td>
+        </tr>
+        <tr>
+           
+            <td><button class="btn">9</button></td>
+            <td><button class="btn">8</button></td>
+            <td><button class="btn">7</button></td>
+            <td><button class="btn" id="v">+</button></td>
+           
+        </tr>
+        <tr>
+            <td><button class="btn">4</button></td>
+            <td><button class="btn">5</button></td>
+            <td><button class="btn">6</button></td>
+            <td><button class="btn" id="w">-</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="btn">1</button></td>
+            <td><button class="btn">2</button></td>
+            <td><button class="btn">3</button></td>
+            <td><button class="btn" id="x">%</button></td>
+           
+        </tr>
+        <tr>
+            <td><button class="btn">.</button></td>
+            <td><button class="btn">0</button></td>
+            <td><button class="btn">=</button></td>
+            <td><button class="btn" id="y">x</button></td>
+           
+        </tr>
+       
+
+     </table> 
+    <script>
+        let x=document.getElementById("screen")
+        let y=document.getElementsByClassName("btn")
+        console.log(y);
+        for(let i=0;i<y.length;i++)
+        {
+            y[i].addEventListener("click",()=>
+            {
+                x.value=x.value+y[i].innerHTML
+            })
+        }
+        function ac()
+        {
+            document.getElementById("screen").value=""
+           
+            
+        }
+                let s=document.getElementById("ce")
+                s.addEventListener("click",()=>
+                {
+                    x.value=x.value.slice(0,-1)
+                })
+                let n=document.getElementById("eq")
+        n.addEventListener("click",()=>
+        {
+            x.value=eval(x.value)
+        })
+        </script>
+    
+</body>
+</html>

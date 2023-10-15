@@ -1,0 +1,78 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            height: 550px;
+            width: 700px;
+            background-color: rgba(12, 135, 243, 0.818);
+            padding-left: 200px;
+            margin-left: 150PX;
+          
+        }
+        #b{
+            height: 430px;
+            width: 450px;
+            background-color:white;
+            background-position:100px;
+            padding-left: 5px;
+        }
+        h1{
+            color: white;
+            padding-left: 35PX;
+            padding-top: 10PX;
+        }
+        input{
+            position: flex;
+        }
+        button{
+            background-color: rgba(0, 170, 255, 0.864);
+            padding-left: 10PX;
+            padding-right: 10PX;
+        }
+        
+        </style>
+</head>
+<body>
+    <div id="a">
+     <h1>customer survey form</h2>
+        <div id="b">
+            <br>
+        <form action="">
+            Name
+            <input type="text" name="" id="">
+            Email 
+            <input type="email" name="" id="">
+            <br>
+            
+            Is this first time are you using mr product &sevice
+            <br><br>
+            <input type="radio" name="a">yes
+            <input type="radio" name="a" id="">no
+            <br> <br>
+            Would you suggestion to your friends and colleagues
+            <br><br>
+            <input type="radio" name="b">yes
+            <input type="radio" name="b" id="">no
+            <br><br>
+            How satisfied  are you with our sevices
+            <br><br>
+            <input type="radio" name="c">satisfied
+            <input type="radio" name="c" id="">undecided
+            <input type="radio" name="c">unsatisfied
+            <br> <br>
+            Do u have suggestion to improve our sevices
+            <br>
+            <textarea name="" id="" cols="50" rows="4"></textarea> 
+            <br> <br>
+            <button>submit</button>
+
+
+        </form>
+       </div>
+    </div>
+</body>
+</html>
